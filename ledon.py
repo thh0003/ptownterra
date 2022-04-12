@@ -7,4 +7,4 @@ while True:
     red.on()    #turn led on 
     sleep(1)    #delay for 1 second 
     red.off()   #turn led off 
-    sleep(1):
+    sleep(1)
