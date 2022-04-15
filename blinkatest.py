@@ -1,6 +1,7 @@
 import board
 import digitalio
 import busio
+import adafruit_bmp280
 
 print("Hello blinka!")
 
@@ -15,5 +16,8 @@ print("I2C ok!")
 # Try to create an SPI device
 spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
 print("SPI ok!")
+
+i2c = board.I2C()
+sensor = adafruit_bmp280.Adafruit_BMP280_I2C(i2c)
 
 print("done!")
